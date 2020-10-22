@@ -1,0 +1,205 @@
+*{outline: none}
+
+#contents{width: auto !important; float:none !important;}
+/*#contents .visual{padding-top: 99px}*/
+
+#right, #header .navi, .title h2{font-family:'Frank Ruhl Libre', serif; font-weight: 400}
+
+#header{position: fixed; right: 0; top: 0; left: 0; background-color: #fff; z-index: 10000; }
+#header:before,
+#header:after{display: none}
+#header .topArea{padding: 28px 0 0}
+#header .xans-layout-shoppinginfo{display: none}
+#header .xans-layout-logotop { transition: .3s;}
+#header .xans-layout-logotop a {display: inline-block; width: 100px; font-size: 0 }
+#header .navi > li a{font-size: 1.3em;
+                text-decoration: none; }
+
+
+.navi{display: inline-block; line-height: 1; margin: 20px 0 0 0}
+.navi li{position: relative}
+.navi > li{ margin: 0 25px; float:left; line-height: 40px}
+.navi li:hover > a{color: #AAAAAA; transition: .4s}
+
+
+
+.navi .xans-layout-boardinfo.cm{margin: 0; padding: 0}
+.navi .xans-layout-boardinfo li{padding: 10px 10px}
+
+#category .position li > a{padding: 0; font-weight: 400;}
+
+
+/*only you*/
+#naviULgnb.navi >li> div{ display: none; position: absolute;
+			 z-index: 100; font-size: 10px; line-height: 15px; top: 100%;
+		 	 border-bottom: 1px solid black; border-top: 1px solid black; padding-top: 7px;
+			 background-color: rgba(255,255,255,.5)}
+#naviULgnb.navi >li> div:after{content: ""; position: absolute; top: -5px; width: 9px; height: 9px; background-color: black; transform: rotate(45deg);}
+#naviULgnb.navi >li> div li{ padding: 10px 10px;}
+#naviULgnb.navi >li> div li > a{ text-decoration: none;}
+
+#naviULgnb.navi #category{left: -28px}
+#naviULgnb.navi .order{left: -7px}
+#naviULgnb.navi .cm{left: -1px; padding: 7px 14px 0;}
+#category:after{left: 42px}
+.order:after{left: 41px}
+.cm:after{left: 44px}
+
+@keyframes ani{
+	0%{height: 0}
+	100%{height: 100%}
+}
+
+#right{position: absolute; right: 0;}
+#right:after{content: ""; display: block ;clear: both;}
+#right .xans-layout-statelogon{line-height: 40px; float: left;}
+#right .xans-layout-statelogoff{line-height: 40px; float: left;}
+#right .xans-layout-statelogoff > a,
+#right .xans-layout-statelogon > a{font-size: 14px; text-decoration: none; background: none; padding-right: 11px}
+
+#right .logWing:before{content: "3000won"; color: white; font-size: 11px; background-color: black; letter-spacing: .5px;
+					padding: 1px 5px;
+					border-radius: 5px;
+					position: relative;
+					left: -10px;
+					top: -1px;}
+
+#header .xans-layout-searchheader{ margin: 0;}
+#searchImg{text-decoration: none; line-height: 37px}
+#right #searchBarForm{float: right}
+#right #searchBarForm .xans-layout-searchheader{margin: 0px}
+.xans-layout-searchheader #searchBoxD fieldset{max-width: 500px; border-bottom: 2px solid #0d203d; margin: 0 auto;
+							border-radius: 0; }
+.xans-layout.xans-layout-searchheader fieldset{border: none}
+#searchBoxD{position: fixed; left: 0; top: 125px; right: 0; z-index: 1000; background: #fff; padding: 30px;display: none}
+.xans-layout-searchheader #searchBoxD #keyword{width: calc(100% - 60px)}
+
+
+/*스크롤시*/
+
+#header.scroll{ z-index: 1000; background-color: white; }
+#header.scroll::before{display: none}
+#header.scroll .xans-layout-logotop{margin-top: -82px;}
+/* #header.scroll .topArea{height: auto; padding: 0} */
+/* #header.scroll .xans-layout-logotop{position: absolute; left: 0px; top: 50%; transform: translateY(-50%);
+					width: 0;} */
+
+#header.scroll #right .xans-layout-statelogoff,
+#header.scroll #right .xans-layout-statelogon{height: 0}
+#header.scroll #searchBoxD{top: 43px}
+#header.scroll .xans-layout-searchheader #searchBoxD #keyword{width: calc(100% - 45px)}
+
+/*quick*/
+
+#quick{text-align: center; color: #0d203d}
+#quick .topBtn a, #quick .botBtn a{text-decoration: none}
+#quick .quickCon a{text-decoration: none; margin:3px auto}
+#quick .quickCon span{display: none; font-size: 14px}
+
+#quick .quickCon:hover{}
+
+/*icon*/
+#contents .xans-element-.xans-product .iconBtn{position: absolute; bottom: 12px; right: 12px}
+#contents .xans-element-.xans-product .iconBtn > span{opacity: 85%}
+#contents .xans-element-.xans-product .iconBtn .Icart{margin: 0 0 0 8px}
+
+/* list */
+#contents .ec-base-product .prdList .description{position: absolute; bottom: -66px; height: 80px; background-color: #fff; padding: 0; width: 100%; display: none}
+#contents .ec-base-product .prdList .description .name{padding-top: 10px }
+#contents .xans-record-:hover .description{display: block}
+
+
+#card{margin: 30px 0}
+#card li{display: inline-block; vertical-align: middle; width: 30%; margin: 30px 10px}
+#card li a{font-family: 'Frank Ruhl Libre', serif;
+			font-weight: 500;
+			font-size: 25px;
+			text-decoration: none;
+			text-align: center}
+#card li a img{max-width: 100%}
+
+#thumb{margin: 75px auto; font-size: 0; line-height: 0;}
+#thumb .thumb{display: inline-block; vertical-align: middle; width: 860px; overflow: hidden; }
+#thumb .thumb img{width: 100%; transform: scale(1.4); float: right}
+#thumb .letter{display: inline-block; vertical-align: middle; text-align: center;
+			font-family: 'Noto Serif KR', serif;
+			font-size: 14px;
+			line-height: 1.5;
+			width: calc(100% - 860px); position: relative}
+#thumb .letter:after{content: ""; background: url(/pby/line.gif) no-repeat;
+    position: absolute;
+    height: 142px;
+    left: 50%;
+    width: 1px;
+    background-size: 100% 200%;
+    display: block;}
+#thumb .letter strong{font-weight:600; font-size: 27px}
+#thumb .letter p:first-child{color: #edbba4; font-size: 18px; font-weight: 200; font-style: italic}
+#thumb .letter p:nth-child(4){line-height: 62px; font-size: 15px;}
+#thumb .letter a{color: #4f4f4f; text-decoration: none; font-size: 20px; padding: 7px 49px; border: 1px solid #ffc9b0; position: absolute; bottom: -214px; right: 136px;}
+#thumb .letter a:hover{background-color: #ffc9b0; color: #fff; }
+
+#fixbanner{position: relative;
+    z-index: 9;
+    overflow: hidden;
+    height: 300px;
+    margin: 0px auto 0;
+    text-align: center;
+    background: url(https://images.unsplash.com/photo-1482385916434-814664df9c5b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1284&q=80);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	margin-top: 40px}
+#fixbanner span{color: #fff; font-family: "Times New Roman", "serif"; font-size: 2.5em; font-style: italic;
+				letter-spacing: 0.2px; vertical-align: middle}
+
+/* 인스타 */
+#slideshow-main-container .headArea #header-title.title{font-size: 15px; font-family:'Frank Ruhl Libre', serif; font-weight: 400}
+<<<<<<< HEAD
+#slideshow-main-container .headArea #header-title.title{}
+=======
+
+>>>>>>> 6fb01a4f6a57cf7cff78a0de59a0eba999a1b978
+
+#footer{border-bottom: none; border-top: none; background-color: #0d203d; color: #fff;}
+#footer:before{display: none}
+#footer .xans-layout-footer .utilMenu{border:none;}
+#footer .xans-layout-footer .utilMenu li{border:none; background: none; padding: 0 20px 0 0}
+#footer .xans-layout-footer .utilMenu a{font-size: 12px; font-weight: 200; text-decoration: none; color: #fff; }
+.xans-layout-footer .utilMenu li
+#footer .xans-layout-footer .address{padding: 0}
+#footer .address > span,
+#footer .address > span a{color: white; font-weight: 200; line-height: 19px}
+
+#footer .xans-layout-footer {padding: 15px 0 90px 0}
+#footer .xans-layout-footer > div{padding: 10px 0}
+#footer .address{padding: 25px 0 0 }
+
+#footer .fTitle > div{display: inline-block; width: 120px; vertical-align: bottom; padding-right: 10px;}
+#footer .fTitle > div > span{font-size: 0}
+#footer .fTitle > img{width: 100%}
+
+#sns{position: absolute; left: 50%; transform: translateX(-50%); top: 14px}
+#sns ul > li{display: inline-block; margin: 0 5px; vertical-align: middle;}
+#sns a{color: white; font-size: 2em; line-height: 43px; text-decoration: none}
+#sns span{font-size: 0}
+
+#topBtn{float: right; padding-top: 25px}
+#topBtn a{color: white;
+    font-weight: 500;
+    font-size: 1.2em;
+    text-decoration: none;
+    line-height: 1;
+    letter-spacing: 0.5px;
+}
+.bottom{height: 20px; background-color: #0d203d;}
+
+
+
+/*검과결과*/
+.xans-search-result.ec-base-product{margin: 20px 0 0}
+.xans-search-result.ec-base-product .iconBtn{position: absolute;
+										bottom: 12px;
+										right: 12px;}
+.xans-search-result.ec-base-product .iconBtn .Icart{margin-left: 8px}
